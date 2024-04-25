@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Shape</title>
+    <style>
+        .square{
+            height: 300px;
+            width: 300px;
+            background-color: green;
+            transition: border-radius 0.5s;
+        }
+        .circle{
+            border-radius: 50%;
+        }
+        button{
+            margin-top: 30px;
+            margin-left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" class="square"></div>
+    <button onclick="changeShape()">Change Shape</button>
+
+    <script>
+        function changeShape() {
+            var div = document.getElementById("div1");
+            div.classList.toggle("circle");
+        }
+    </script>
+</body>
+</html>
